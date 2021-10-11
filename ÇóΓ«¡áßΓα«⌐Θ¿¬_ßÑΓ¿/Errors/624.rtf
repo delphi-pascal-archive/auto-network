@@ -1,0 +1,4 @@
+Ошибка 624, проблема при подключении к VPN
+1. Отсутствует файл RASPHONE.PBK в {папка с Windows}/system32/RAS или ... Documents and Settings/{ваш юзер или все юзеры}/Application Data/Microsoft/Network/Connections/Pbk, а если даже и есть, то переименовать его во что-то другое, например RASPHONE.OLD, еще можно запустить rasphone.exe, может помочь. 
+2. Стоит запрет на создание подключения. - Разрешить пользователям создавать новые подключения. ПускВыполнитьgpedit.msc и там разбираться. 
+3. Запрещён доступ к папке Documents and Settings/All Users/Application Data/Microsoft/Network/Connections/Pbk - Открыть доступ к папке. Но скорее всего проблему удастся решить таким образом: снять галку с пункта "Только для чтения" в свойствах файла Rasphone.pbk.
